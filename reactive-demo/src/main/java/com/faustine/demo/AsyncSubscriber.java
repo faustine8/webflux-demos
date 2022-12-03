@@ -219,7 +219,7 @@ public abstract class AsyncSubscriber<T> implements Subscriber<T>, Runnable {
      * @param s
      */
     @Override
-    public final void onSubscribe(final Subscription s) {
+    public void onSubscribe(final Subscription s) {
         // As per rule 2.13, we need to throw a `java.lang.NullPointerException` if the `Subscription` is `null`
         if (s == null) throw null;
 
@@ -231,7 +231,7 @@ public abstract class AsyncSubscriber<T> implements Subscriber<T>, Runnable {
      * @param element
      */
     @Override
-    public final void onNext(final T element) {
+    public void onNext(final T element) {
         // As per rule 2.13, we need to throw a `java.lang.NullPointerException` if the `element` is `null`
         if (element == null) throw null;
 
@@ -243,7 +243,7 @@ public abstract class AsyncSubscriber<T> implements Subscriber<T>, Runnable {
      * @param t
      */
     @Override
-    public final void onError(final Throwable t) {
+    public void onError(final Throwable t) {
         // As per rule 2.13, we need to throw a `java.lang.NullPointerException` if the `Throwable` is `null`
         if (t == null) throw null;
 
@@ -254,7 +254,7 @@ public abstract class AsyncSubscriber<T> implements Subscriber<T>, Runnable {
      *
      */
     @Override
-    public final void onComplete() {
+    public void onComplete() {
         signal(OnComplete.Instance);
     }
 
