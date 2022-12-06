@@ -1,4 +1,4 @@
-package com.faustine;
+package com.faustine.demo;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableOnSubscribe;

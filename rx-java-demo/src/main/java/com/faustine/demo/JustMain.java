@@ -1,4 +1,4 @@
-package com.faustine;
+package com.faustine.demo;
 
 import io.reactivex.rxjava3.core.Observable;
 

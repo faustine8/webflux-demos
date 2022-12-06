@@ -1,4 +1,4 @@
-package com.faustine;
+package com.faustine.demo;
 
 import rx.Observable;
 
